@@ -6,11 +6,7 @@ function App() {
 
   const test = 'test'
 
-  return (
-    <div className="App">
-       3팀 
-    </div>
-  )
+  return <div className="App">3팀</div>
 }
 
 export default App
