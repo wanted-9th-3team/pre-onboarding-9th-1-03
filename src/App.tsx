@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignInPage from "./pages/SignInPage";
+import TodoPage from "./pages/TodoPage";
+import SignUpPage from "./pages/SignUpPage";
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  const test = 'test'
-
-  return <div className="App">3팀</div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<SignInPage />} />
+        <Route path="/todo" element={<TodoPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
