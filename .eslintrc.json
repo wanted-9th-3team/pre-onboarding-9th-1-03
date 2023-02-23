@@ -10,7 +10,8 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "no-var": "error",
-    "@typescript-eslint/no-inferrable-types": "off"
+    "@typescript-eslint/no-inferrable-types": "off",
+    "prefer-const": "off"
   },
   "overrides": [
     {
