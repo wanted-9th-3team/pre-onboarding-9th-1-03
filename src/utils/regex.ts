@@ -1,13 +1,11 @@
-
-
-export const emailRegex = (email: string) : boolean => {
-  return emailExpression.test(email);
+export const emailRegex = (email: string): boolean => {
+  return emailExpression.test(email)
 }
 
-export const passwordRegex = (password: string) : boolean => {
-  return passwordExpression.test(password);
+export const passwordRegex = (password: string): boolean => {
+  return passwordExpression.test(password)
 }
 
-const emailExpression: RegExp = /@/;
+const emailExpression: RegExp = /@/
 
-const passwordExpression: RegExp = /^.{8,}$/;
+const passwordExpression: RegExp = /^.{8,}$/
