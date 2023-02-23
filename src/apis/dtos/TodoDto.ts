@@ -1,8 +1,8 @@
 export interface TodoDto {
-    todo: string
+  todo: string
 }
 
 export interface UpdateTodoDto {
-    todo: string
-    isCompleted: boolean
+  todo: string
+  isCompleted: boolean
 }

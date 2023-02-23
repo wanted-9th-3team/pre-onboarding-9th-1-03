@@ -1,4 +1,4 @@
 export interface UserDto {
-    email: string | undefined
-    password: string | undefined
+  email: string | undefined
+  password: string | undefined
 }
