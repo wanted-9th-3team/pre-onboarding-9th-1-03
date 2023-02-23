@@ -16,7 +16,7 @@ export const client = axios.create(axiosConfig)
 client.interceptors.request.use(config => {
   if (!config.headers) return config
 
-  let token: string | null = localStorage.getItem('ACCESS_TOKEN')
+  const token: string | null = localStorage.getItem('ACCESS_TOKEN')
   if (token !== null) {
     config.headers.Authorization = `Bearer ${token}`
   }
