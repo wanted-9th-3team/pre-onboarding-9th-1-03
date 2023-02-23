@@ -15,12 +15,7 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "plugins": [
-    "react",
-    "react-hooks",
-    "import",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "react-hooks", "import", "@typescript-eslint"],
   "settings": {
     "import/resolver": {
       "typescript": {
@@ -43,10 +38,7 @@
       "extends": ["plugin:@typescript-eslint/recommended"]
     },
     {
-      "files": ["**/__tests__/**/*", "**/*.{spec,test}.*"],
-      "env": {
-        "jest/globals": true
-      }
+      "files": ["**/__tests__/**/*", "**/*.{spec,test}.*"]
     }
   ]
 }
