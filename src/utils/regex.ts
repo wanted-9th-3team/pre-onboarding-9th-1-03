@@ -6,6 +6,6 @@ export const passwordRegex = (password: string): boolean => {
   return passwordExpression.test(password)
 }
 
-const emailExpression: RegExp = /@/
+const emailExpression = /@/
 
-const passwordExpression: RegExp = /^.{8,}$/
+const passwordExpression = /^.{8,}$/
