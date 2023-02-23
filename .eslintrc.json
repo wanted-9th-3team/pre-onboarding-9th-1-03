@@ -27,8 +27,7 @@
     }
   },
   "rules": {
-    "no-console": "error",
-    "import/prefer-default-export": "off"
+    "no-var": "error"
   },
   "overrides": [
     {
