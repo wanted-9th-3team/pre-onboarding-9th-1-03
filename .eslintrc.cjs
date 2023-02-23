@@ -1,5 +1,5 @@
-export default [
-  {
+module.exports = {
+  
     env: {
       browser: true,
       es2021: true,
@@ -8,6 +8,7 @@ export default [
       'eslint:recommended',
       'plugin:react/recommended',
       'standard-with-typescript',
+      'plugin:prettier/recommended',
     ],
     overrides: [
       {
@@ -22,12 +23,13 @@ export default [
       ecmaVersion: latest,
       sourceType: module,
     },
-    plugins: ['react'],
+    plugins: ['react',"prettier", "react-hooks"],
     rules: {
+      "prettier/prettier" : "error",
       'no-var': 'error',
       '@typescript-eslint/explicit-function-return-type': 'off',
       'space-before-function-paren': 'off',
       '@typescript-eslint/space-before-function-paren': 'off',
     },
-  },
-]
+
+}

@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  var a = 'kanga'
+  const a = 'kanga'
 
   return (
     <div className="App">
