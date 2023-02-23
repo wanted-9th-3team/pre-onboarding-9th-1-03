@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  const a = 'kanga'
+  const test = 'test';
 
   return (
     <div className="App">
@@ -17,7 +17,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React{a}</h1>
+      <h1>Vite + React{test}</h1>
       <div className="card">
         <button
           onClick={() => {
