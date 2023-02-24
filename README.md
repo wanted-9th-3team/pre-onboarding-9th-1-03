@@ -32,9 +32,9 @@ npx vite
 
 ## 배포 사이트
 
----
+--- 
 
-(https://만들예정)
+(http://s3-deploy-cicd.s3-website.ap-northeast-2.amazonaws.com/)
 
 ## 👨‍💻 팀원
 
