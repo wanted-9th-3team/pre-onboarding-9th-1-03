@@ -10,7 +10,7 @@
     "postinstall": "husky install",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "deploy": "cp build/index.html build/404.html && gh-pages -d build"
+    "deploy": "cp dist/index.html dist/404.html && gh-pages -d dist"
   },
   "homepage": "https://wanted-9th-3team.github.io/task-01-todo-list",
   "dependencies": {
