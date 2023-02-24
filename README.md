@@ -34,7 +34,7 @@ npx vite
 
 ---
 
-(https://wanted-9th-3team.github.io/task-01-todo-list/)
+(http://s3-deploy-cicd.s3-website.ap-northeast-2.amazonaws.com/)
 
 ## 👨‍💻 팀원
 
