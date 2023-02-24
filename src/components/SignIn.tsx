@@ -54,6 +54,7 @@ function SignIn() {
         <input
           type="email"
           id="email"
+          data-testid="email-input"
           value={email}
           required
           onChange={emailChangeHandler}
@@ -62,6 +63,7 @@ function SignIn() {
         <input
           type="password"
           id="password"
+          data-testid="password-input"
           value={password}
           required
           onChange={passwordChangeHandler}
@@ -69,6 +71,7 @@ function SignIn() {
         <div>
           <button
             type="submit"
+            data-testid="signin-button"
             disabled={!formIsValid}
             style={{ marginRight: '10px' }}
           >
