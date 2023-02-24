@@ -3,6 +3,6 @@ export interface TodoDto {
 }
 
 export interface UpdateTodoDto {
-  todo: string
+  todo: string | undefined
   isCompleted: boolean
 }
