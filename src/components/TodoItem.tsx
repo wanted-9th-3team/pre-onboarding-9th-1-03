@@ -23,16 +23,6 @@ function TodoItem({
   const [editMode, setEditMode] = useState(true)
   const [editInput, setEditInput] = useState(todo)
 
-  // todoId: number, updateTodo: UpdateTodoDto)
-
-  //   <input
-  //   type="checkbox"
-  //   defaultChecked={item.isCompleted ? "checked" : ""}
-  //   onChange={(e) =>
-  //     updateTodosHandler(item.id, item.todo, e.target.checked)
-  //   }
-  // />
-
   return (
     <div>
       <li>
