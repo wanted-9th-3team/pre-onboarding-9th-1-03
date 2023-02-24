@@ -34,7 +34,7 @@ npx vite
 
 ---
 
-(http://s3-deploy-cicd.s3-website.ap-northeast-2.amazonaws.com/)
+[바로가기](http://s3-deploy-cicd.s3-website.ap-northeast-2.amazonaws.com/)
 
 ## 👨‍💻 팀원
 
