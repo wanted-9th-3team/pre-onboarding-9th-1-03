@@ -19,5 +19,5 @@ export const useTodos = () => {
     setLoading(false)
   }, [])
 
-  return { todos, setTodos, loading, error }
+  return { todos, setTodos, loading, error, setError }
 }

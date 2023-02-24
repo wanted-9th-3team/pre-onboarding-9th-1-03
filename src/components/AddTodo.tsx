@@ -13,7 +13,7 @@ export function AddTodo({ addTodo }: IAddTodoProps) {
   }
 
   return (
-    <>
+    <div>
       <input
         value={todo}
         onChange={e => {
@@ -21,7 +21,7 @@ export function AddTodo({ addTodo }: IAddTodoProps) {
         }}
       />
       <button onClick={handleAddTodo}>추가</button>
-    </>
+    </div>
   )
 }
 

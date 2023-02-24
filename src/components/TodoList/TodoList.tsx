@@ -10,7 +10,7 @@ interface ITodosProps {
   todos: Todo[]
 }
 
-function TodoList({ todos, createTodo, updateTodo, deleteTodo }: ITodosProps) {
+function TodoList({ todos, updateTodo, deleteTodo }: ITodosProps) {
   const navigate = useNavigate()
   const [isUpdate, setIsUpdate] = useState(true)
   const textRef = useRef<HTMLInputElement | null>(null)
