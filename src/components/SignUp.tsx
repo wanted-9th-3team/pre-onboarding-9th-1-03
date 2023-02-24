@@ -59,7 +59,7 @@ function SignUp() {
 
   return (
     <div>
-      <h1>Sign in</h1>
+      <h1>Sign up</h1>
       <form
         onSubmit={handleSubmit}
         style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
@@ -82,7 +82,7 @@ function SignUp() {
         />
         <label htmlFor="passwordConfirm">Password Confirm</label>
         <input
-          type="passwordConfirm"
+          type="password"
           id="passwordConfirm"
           value={passwordConfirm}
           required
