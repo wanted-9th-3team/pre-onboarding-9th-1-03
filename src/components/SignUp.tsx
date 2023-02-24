@@ -67,6 +67,7 @@ function SignUp() {
         <label htmlFor="email">Email</label>
         <input
           type="email"
+          data-testid="email-input"
           id="email"
           value={email}
           required
@@ -76,6 +77,7 @@ function SignUp() {
         <input
           type="password"
           id="password"
+          data-testid="password-input"
           value={password}
           required
           onChange={passwordChangeHandler}
@@ -89,7 +91,11 @@ function SignUp() {
           onChange={confirmPasswordChangeHandler}
         />
         <div>
-          <button type="submit" disabled={!formIsValid}>
+          <button
+            data-testid="signup-button"
+            type="submit"
+            disabled={!formIsValid}
+          >
             sign up
           </button>
         </div>
