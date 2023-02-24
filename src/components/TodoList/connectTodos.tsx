@@ -1,5 +1,4 @@
 import { useTodos } from '../../hooks/useTodos'
-import { useState } from 'react'
 import { createTodo, deleteTodo, updateTodo } from '../../apis/todo-api'
 import { UpdateTodoDto } from '../../apis/dtos/TodoDto'
 import AddTodo from '../AddTodo'
@@ -7,7 +6,6 @@ import TodoList from './TodoList'
 
 function ConnectTodos() {
   const { todos, setTodos } = useTodos()
-  const [error, setError] = useState('')
 
   const handleCreateTodo = async (todoText: string) => {
     try {
