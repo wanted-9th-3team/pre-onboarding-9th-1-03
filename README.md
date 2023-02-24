@@ -34,7 +34,7 @@ npx vite
 
 ---
 
-(https://만들예정)
+(https://wanted-9th-3team.github.io/task-01-todo-list/)
 
 ## 👨‍💻 팀원
 
