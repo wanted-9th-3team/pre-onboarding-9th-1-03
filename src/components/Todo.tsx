@@ -17,9 +17,7 @@ export interface Itodos {
 
 function Todo() {
   const [todoInput, setTodoInput] = useState('')
-
   const navigate = useNavigate()
-
   const [todos, setTodos] = useState<Itodos[]>([])
   const ACCESS_TOKEN = localStorage.getItem('ACCESS_TOKEN')
 
@@ -53,7 +51,6 @@ function Todo() {
       todo,
       isCompleted,
     })
-
     setTodos([response.data, ...todos.filter(todo => todo.id !== id)])
   }
 
