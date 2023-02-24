@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from 'axios'
+import axios, { AxiosRequestConfig, AxiosError, AxiosResponse } from 'axios'
 
 export const baseURL = 'https://pre-onboarding-selection-task.shop'
 
@@ -23,3 +23,12 @@ client.interceptors.request.use(config => {
 
   return config
 })
+
+client.interceptors.response.use(
+  (res: AxiosResponse) => res,
+  error => {
+    if (error instanceof AxiosError) {
+      throw new Error()
+    }
+  }
+)
