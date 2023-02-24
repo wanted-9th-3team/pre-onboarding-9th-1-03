@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ChangeEvent } from 'react'
 import { useState } from 'react'
 
 interface ITodoItemProps {
@@ -23,15 +23,34 @@ function TodoItem({
   const [editMode, setEditMode] = useState(true)
   const [editInput, setEditInput] = useState(todo)
 
+  const updateTodoButton = (event: ChangeEvent<HTMLInputElement>) => {
+    const isCompleted = event.target.checked
+    updateTodosHandler(todoId, todo, isCompleted)
+  }
+
+  const submitTodoButton = () => {
+    if (confirm('진짜 수정하겠습니까?')) {
+      updateTodosHandler(todoId, editInput, isCompleted)
+      setEditMode(!editMode)
+    }
+  }
+
+  const cancelButtonHandler = () => {
+    setEditMode(!editMode)
+    setEditInput(todo)
+  }
+
+  const deleteButtonHandelr = () => {
+    if (confirm('진짜 삭제하시겠습니까??')) deleteTodoHandler(todoId)
+  }
+
   return (
     <div>
       <li>
         <input
           type="checkbox"
           checked={isCompleted}
-          onChange={ev => {
-            updateTodosHandler(todoId, todo, ev.target.checked)
-          }}
+          onChange={updateTodoButton}
         />
         {editMode ? (
           <>
@@ -50,12 +69,7 @@ function TodoItem({
             >
               수정
             </button>
-            <button
-              data-testid="delete-button"
-              onClick={() => {
-                deleteTodoHandler(todoId)
-              }}
-            >
+            <button data-testid="delete-button" onClick={deleteButtonHandelr}>
               삭제
             </button>
           </>
@@ -64,26 +78,14 @@ function TodoItem({
             <input
               data-testid="modify-input"
               defaultValue={editInput}
-              onChange={ev => {
-                setEditInput(ev.target.value)
+              onChange={event => {
+                setEditInput(event.target.value)
               }}
             />
-            <button
-              data-testid="submit-button"
-              onClick={() => {
-                updateTodosHandler(todoId, editInput, isCompleted)
-                setEditMode(!editMode)
-              }}
-            >
+            <button data-testid="submit-button" onClick={submitTodoButton}>
               제출
             </button>
-            <button
-              data-testid="cancel-button"
-              onClick={() => {
-                setEditMode(!editMode)
-                setEditInput(todo)
-              }}
-            >
+            <button data-testid="cancel-button" onClick={cancelButtonHandler}>
               취소
             </button>
           </>
