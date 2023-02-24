@@ -88,8 +88,8 @@ function Todo() {
         data-testid="new-todo-input"
         placeholder="새 할일"
         value={todoInput}
-        onChange={ev => {
-          setTodoInput(ev.target.value)
+        onChange={event => {
+          setTodoInput(event.target.value)
         }}
       />
       <button
